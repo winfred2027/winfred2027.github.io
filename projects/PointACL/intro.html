@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>PointACL: Point Cloud Understanding via Attention-Driven Contrastive Learning</title>
+
+    <meta name="author" content="Yi Wang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../website/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+  </head>
+  
+  <body>
+	  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	    <tr style="padding:0px">
+		  <td style="padding:0px">
+      	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <h1 class="title" style="text-align: center;">
+              PointACL: Point Cloud Understanding via Attention-Driven Contrastive Learning
+            </h1>
+            <p style="text-align:center">
+            	<a href="https:/winfred2027.github.io/">Yi Wang<sup>1</sup>*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://jiazewang.com/">Jiaze Wang<sup>2</sup>*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://ziyuguo99.github.io/">Ziyu Guo<sup>2</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://zrrskywalker.github.io/">Renrui Zhang<sup>2</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://correr-zhou.github.io/">Donghao Zhou<sup>2</sup></a><br>     
+            	<a href="https://guangyongchen.github.io/">Guangyong Chen<sup>3</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://faculty.csu.edu.cn/liuanfeng/en/index.htm">Anfeng Liu<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://www.cse.cuhk.edu.hk/~pheng/">Pheng-Ann Heng<sup>2</sup></a>
+            </p>
+            <p style="text-align:center">
+            	<a href="https://www.csu.edu.cn/">Central South University<sup>1</sup></a> &nbsp;&nbsp; 
+              <a href="https://www.cuhk.edu.hk/">The Chinese University of Hong Kong<sup>2</sup></a> &nbsp;&nbsp;              
+              <a href="https://www.zhejianglab.org/">Zhejiang Lab<sup>3</sup></a>
+            </p>
+          </td>
+      		</tr>
+      	</tbody></table>
+				<div style="width:100%;justify-content: center;">
+		      <div class="button-container" style="width:50%;">  
+				    <a href="https://arxiv.org/pdf/2411.14744" class="arc-button">ArXiv</a>  
+				    <a href="https://github.com/winfred2027/PointACL" class="arc-button">Github</a>   
+					</div>
+				</div>
+				<section id="abstract">
+	      	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	          <tr>
+	          <td style="padding:20px;width:100%;vertical-align:middle">
+	          <h2>Abstract</h2>
+	            <p>Recently Transformer-based models have advanced point cloud understanding by leveraging self-attention mechanisms, however, these methods often overlook latent information in less prominent regions, leading to increased sensitivity to perturbations and limited global comprehension. To solve this issue, we introduce PointACL, an attention-driven contrastive learning framework designed to address these limitations. Our method employs an attention-driven dynamic masking strategy that guides the model to focus on under-attended regions, enhancing the understanding of global structures within the point cloud. Then we combine the original pre-training loss with a contrastive learning loss, improving feature discrimination and generalization. </p>
+	            <br>
+	            <img style="width:100%;max-width:100%;" alt="PointACL" src="main.png">
+	            <br>
+	            <p>Extensive experiments validate the effectiveness of PointACL, as it achieves state-of-the-art performance across a variety of 3D understanding tasks, including object classification, part segmentation, and few-shot learning. Specifically, when integrated with different Transformer backbones like Point-MAE and PointGPT, PointACL demonstrates improved performance on datasets such as ScanObjectNN, ModelNet40, and ShapeNetPart. This highlights its superior capability in capturing both global and local features, as well as its enhanced robustness against perturbations and incomplete data.</p>
+	          </td>
+	        	</tr>
+	      	</tbody></table>
+			  </section>
+			  <section id="citation">
+		    	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		        <tr>
+		        <td style="padding:20px;width:100%;vertical-align:middle">
+			        <h2>BibTeX</h2>
+<pre>
+@misc{wang2024pointcloudunderstandingattentiondriven,
+      title={Point Cloud Understanding via Attention-Driven Contrastive Learning}, 
+      author={Yi Wang and Jiaze Wang and Ziyu Guo and Renrui Zhang and Donghao Zhou and Guangyong Chen and Anfeng Liu and Pheng-Ann Heng},
+      year={2024},
+      eprint={2411.14744},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.14744}, 
+}
+</pre>
+		        </td>
+		        </tr>
+	        </tbody></table>
+		  	</section>
+		  </td>
+      </tr>
+    </table>
+	</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	    <title>PointPatchMix: Point Cloud Mixing with Patch Scoring</title>
+
+	    <meta name="author" content="Yi Wang">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="shortcut icon" href="../../website/favicon/favicon.ico" type="image/x-icon">
+	    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+  	</head>
+  
+  	<body>
+	    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	      	<tr style="padding:0px">
+		    <td style="padding:0px">
+	          	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		            <tr style="padding:0px">
+		            <td style="padding:20px;width:100%;vertical-align:middle">
+		                <h1 class="title" style="text-align: center;">
+		                  PointPatchMix: Point Cloud Mixing with Patch Scoring
+		                </h1>
+		                <p style="text-align:center">
+		                	<a href="https:/winfred2027.github.io/">Yi Wang<sup>1</sup>*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		                	<a href="https://jiazewang.com/">Jiaze Wang<sup>2</sup>*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		                	<a href="">Jinpeng Li<sup>2</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		                	<a href="https://scholar.google.com.hk/citations?user=GSQY0CEAAAAJ&hl=zh-CN">Zixu Zhao<sup>2</sup></a><br>     
+		                	<a href="https://guangyongchen.github.io/">Guangyong Chen<sup>3</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		                	<a href="https://faculty.csu.edu.cn/liuanfeng/en/index.htm">Anfeng Liu<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		                	<a href="https://www.cse.cuhk.edu.hk/~pheng/">Pheng-Ann Heng<sup>2</sup></a>
+		                </p>
+		                <p style="text-align:center">
+		                  <a href="https://www.csu.edu.cn/">Central South University<sup>1</sup></a> &nbsp;&nbsp; 
+		                  <a href="https://www.cuhk.edu.hk/">The Chinese University of Hong Kong<sup>2</sup></a> &nbsp;&nbsp; 
+		                  <a href="https://www.zhejianglab.org/">Zhejiang Lab<sup>3</sup></a>
+		                </p>
+		            </td>
+		        	</tr>
+	          	</tbody></table>
+			<div style="width:100%;justify-content: center;">
+	          	<div class="button-container" style="width:50%;">  
+				    <a href="https://arxiv.org/pdf/2303.06678.pdf" class="arc-button">ArXiv</a>  
+				    <a href="https://github.com/winfred2027/PointPatchMix" class="arc-button">Github</a>   
+				</div>
+			</div>
+				<section id="abstract">
+		          	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		              	<tr>
+		              	<td style="padding:20px;width:100%;vertical-align:middle">
+			                <h2>Abstract</h2>
+			                <p>Data augmentation is an effective regularization strategy for mitigating overfitting in deep neural networks, and it plays a crucial role in 3D vision tasks, where the point cloud data is relatively limited. While mixing-based augmentation has shown promise for point clouds, previous methods mix point clouds either on block level or point level, which has constrained their ability to strike a balance between generating diverse training samples and preserving the local characteristics of point clouds. The significance of each part component of the point clouds has not been fully considered, as not all parts contribute equally to the classification task, and some parts may contain unimportant or redundant information.</p>
+			                <br>
+			                <img style="width:100%;max-width:100%;" alt="point-patch-mix" src="main.png">
+			                <br>
+			                <p>To overcome these challenges, we propose PointPatchMix, a novel approach that mixes point clouds at the patch level and integrates a patch scoring module to generate content-based targets for mixed point clouds. Our approach preserves local features at the patch level, while the patch scoring module assigns targets based on the content-based significance score from a pre-trained teacher model. We evaluate PointPatchMix on two benchmark datasets including ModelNet40 and ScanObjectNN, and demonstrate significant improvements over various baselines in both synthetic and real-world datasets, as well as few-shot settings. With Point-MAE as our baseline, our model surpasses previous methods by a significant margin. Furthermore, our approach shows strong generalization across various point cloud methods and enhances the robustness of the baseline model.</p>
+		              	</td>
+		            	</tr>
+		          	</tbody></table>
+		        </section>
+			    <section id="video">
+		    	    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		              	<tr>
+		              	<td style="padding:20px;width:100%;vertical-align:middle">
+			                <h2>Video</h2>
+							<div class="iframe-container">
+		                		<iframe width="560" height="315" src="https://www.youtube.com/embed/wQgPvKuzsCc" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				            </div>
+		              	</td>
+		            	</tr>
+	          		</tbody></table>
+		    	</section>
+		    	<section id="citation">
+		    	    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		              	<tr>
+		              	<td style="padding:20px;width:100%;vertical-align:middle">
+			                <h2>BibTeX</h2>
+<pre>
+@inproceedings{wang2024pointpatchmix,
+  title={Pointpatchmix: Point cloud mixing with patch scoring},
+  author={Wang, Yi and Wang, Jiaze and Li, Jinpeng and Zhao, Zixu and Chen, Guangyong and Liu, Anfeng and Heng, Pheng Ann},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={6},
+  pages={5686--5694},
+  year={2024}
+}
+</pre>
+		              	</td>
+		            	</tr>
+	          		</tbody></table>
+		    	</section>
+		    </td>
+      		</tr>
+    	</table>
+	</body>
+</html>

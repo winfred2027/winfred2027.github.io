@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>MM-Mixing: Multi-Modal Mixing Alignment for 3D Understanding</title>
+
+    <meta name="author" content="Yi Wang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../website/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+  </head>
+  
+  <body>
+	  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	    <tr style="padding:0px">
+		  <td style="padding:0px">
+      	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <h1 class="title" style="text-align: center;">
+              MM-Mixing: Multi-Modal Mixing Alignment for 3D Understanding
+            </h1>
+            <p style="text-align:center">
+            	<a href="https://jiazewang.com/">Jiaze Wang<sup>1</sup>*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https:/winfred2027.github.io/">Yi Wang<sup>2</sup>*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://ziyuguo99.github.io/">Ziyu Guo<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://zrrskywalker.github.io/">Renrui Zhang<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://correr-zhou.github.io/">Donghao Zhou<sup>1</sup></a><br>     
+            	<a href="https://guangyongchen.github.io/">Guangyong Chen<sup>3</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://faculty.csu.edu.cn/liuanfeng/en/index.htm">Anfeng Liu<sup>2</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://www.cse.cuhk.edu.hk/~pheng/">Pheng-Ann Heng<sup>1</sup></a>
+            </p>
+            <p style="text-align:center">
+              <a href="https://www.cuhk.edu.hk/">The Chinese University of Hong Kong<sup>1</sup></a> &nbsp;&nbsp;
+              <a href="https://www.csu.edu.cn/">Central South University<sup>2</sup></a> &nbsp;&nbsp; 
+              <a href="https://www.zhejianglab.org/">Zhejiang Lab<sup>3</sup></a>
+            </p>
+          </td>
+      		</tr>
+      	</tbody></table>
+				<div style="width:100%;justify-content: center;">
+		      <div class="button-container" style="width:50%;">  
+				    <a href="https://arxiv.org/pdf/2405.18523" class="arc-button">ArXiv</a>  
+				    <a href="https://github.com/winfred2027/MM-Mixing" class="arc-button">Github</a>   
+					</div>
+				</div>
+				<section id="abstract">
+	      	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	          <tr>
+	          <td style="padding:20px;width:100%;vertical-align:middle">
+	          <h2>Abstract</h2>
+	            <p>We introduce MM-Mixing, a multi-modal mixing alignment framework for 3D understanding. MM-Mixing applies mixing-based methods to multi-modal data, preserving and optimizing cross-modal connections while enhancing diversity and improving alignment across modalities. Our proposed two-stage training pipeline combines feature-level and input-level mixing to optimize the 3D encoder. The first stage employs feature-level mixing with contrastive learning to align 3D features with their corresponding modalities. The second stage incorporates both feature-level and input-level mixing, introducing mixed point cloud inputs to further refine 3D feature representations. MM-Mixing enhances intermodality relationships, promotes generalization, and ensures feature consistency while providing diverse and realistic training samples. </p>
+	            <br>
+	            <img style="width:100%;max-width:100%;" alt="mm-mixing" src="main.png">
+	            <br>
+	            <p>We demonstrate that MM-Mixing significantly improves baseline performance across various learning scenarios, including zero-shot 3D classification, linear probing 3D classification, and cross-modal 3D shape retrieval. Notably, we improved the zero-shot classification accuracy on ScanObjectNN from 51.3% to 61.9%, and on ObjaverseLVIS from 46.8% to 51.4%. Our findings highlight the potential of multi-modal mixing-based alignment to significantly advance 3D object recognition and understanding while remaining straightforward to implement and integrate into existing frameworks.</p>
+	          </td>
+	        	</tr>
+	      	</tbody></table>
+			  </section>
+	      <!--
+		    <section id="video">
+	    	  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	          <tr>
+	          <td style="padding:20px;width:100%;vertical-align:middle">
+		          <h2>Video</h2>
+								<div class="iframe-container">
+	                <iframe width="560" height="315" src="https://www.youtube.com/embed/wQgPvKuzsCc" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			        	</div>
+	          </td>
+	          </tr>
+	        </tbody></table>
+	    	</section>
+	    	-->
+			  <section id="citation">
+		    	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		        <tr>
+		        <td style="padding:20px;width:100%;vertical-align:middle">
+			        <h2>BibTeX</h2>
+<pre>
+@misc{wang2024mmmixingmultimodalmixingalignment,
+      title={MM-Mixing: Multi-Modal Mixing Alignment for 3D Understanding}, 
+      author={Jiaze Wang and Yi Wang and Ziyu Guo and Renrui Zhang and Donghao Zhou and Guangyong Chen and Anfeng Liu and Pheng-Ann Heng},
+      year={2024},
+      eprint={2405.18523},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2405.18523}, 
+}
+</pre>
+		        </td>
+		        </tr>
+	        </tbody></table>
+		  	</section>
+		  </td>
+      </tr>
+    </table>
+	</body>
+</html>
