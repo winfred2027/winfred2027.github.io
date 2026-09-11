@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Beyond Binary Contrast: Modeling Continuous Skeleton Action Spaces with Transitional Anchors</title>
+
+    <meta name="author" content="Yi Wang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../website/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+  </head>
+  
+  <body>
+	  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	    <tr style="padding:0px">
+		  <td style="padding:0px">
+      	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <h1 class="title" style="text-align: center;">
+              	Beyond Binary Contrast: <br>Modeling Continuous Skeleton Action Spaces with Transitional Anchors
+            </h1>
+            <p style="text-align:center">
+            	<a href="https://scholar.google.com/citations?user=luRKRzsAAAAJ&hl=en&oi=sra">Yinjie Feng<sup>1</sup>*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https:/winfred2027.github.io/">Yi Wang<sup>2</sup>*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://jiazewang.com/">Jiaze Wang<sup>3</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="https://faculty.csu.edu.cn/liuanfeng/en/index.htm">Anfeng Liu<sup>2</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	<a href="http://homepage.hit.edu.cn/zhuotaotian">Zhuotao Tian<sup>1</sup></a>
+            </p>
+            <p style="text-align:center">
+            	<a href="https://www.hitsz.edu.cn/index.html">Harbin Institute of Technology (shenzhen) <sup>1</sup></a> &nbsp;&nbsp;
+            	<a href="https://www.csu.edu.cn/">Central South University<sup>2</sup></a> &nbsp;&nbsp; 
+              <a href="https://www.cuhk.edu.hk/">The Chinese University of Hong Kong<sup>3</sup></a> &nbsp;&nbsp;                            
+            </p>
+          </td>
+      		</tr>
+      	</tbody></table>
+				<div style="width:100%;justify-content: center;">
+		      <div class="button-container" style="width:50%;">  
+				    <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Feng_Beyond_Binary_Contrast_Modeling_Continuous_Skeleton_Action_Spaces_with_Transitional_CVPR_2026_paper.pdf" class="arc-button">Paper</a>  
+				    <a href="https://github.com/Philchieh/TranCLR" class="arc-button">Github</a>   
+					</div>
+				</div>
+				<section id="abstract">
+	      	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	          <tr>
+	          <td style="padding:20px;width:100%;vertical-align:middle">
+	          <h2>Abstract</h2>
+	            <p>Self-supervised contrastive learning has emerged as a powerful paradigm for skeleton-based action recognition by enforcing consistency in the embedding space. However, existing methods rely on binary contrastive objectives that overlook the intrinsic continuity of human motion, resulting in fragmented feature clusters and rigid class boundaries. To address these limitations, we propose TranCLR, a Transitional anchor-based Contrastive Learning framework that captures the continuous geometry of the action space. </p>
+	            <br>
+	            <img style="width:100%;max-width:100%;" alt="TranCLR" src="main.png">
+	            <br>
+	            <p>Specifically, the proposed Action Transitional Anchor Construction (ATAC) explicitly models the geometric structure of transitional states to enhance the model's perception of motion continuity. Building upon these anchors, a Multi-Level Geometric Manifold Calibration (MGMC) mechanism is introduced to adaptively calibrate the action manifold across multiple levels of continuity, yielding a smoother and more discriminative representation space. Extensive experiments on the NTU RGB+D, NTU RGB+D 120 and PKU-MMD datasets demonstrate that TranCLR achieves superior accuracy and calibration performance, effectively learning continuous and uncertainty-aware skeleton representations.</p>
+	          </td>
+	        	</tr>
+	      	</tbody></table>
+			  </section>
+			  <section id="citation">
+		    	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		        <tr>
+		        <td style="padding:20px;width:100%;vertical-align:middle">
+			        <h2>BibTeX</h2>
+<pre>
+@InProceedings{Feng_2026_CVPR,
+    author    = {Feng, Yingjie and Wang, Yi and Wang, Jiaze and Liu, Anfeng and Tian, Zhuotao},
+    title     = {Beyond Binary Contrast: Modeling Continuous Skeleton Action Spaces with Transitional Anchors},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {6075-6084}
+}
+</pre>
+		        </td>
+		        </tr>
+	        </tbody></table>
+		  	</section>
+		  </td>
+      </tr>
+    </table>
+	</body>
+</html>
